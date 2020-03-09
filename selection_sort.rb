@@ -1,7 +1,7 @@
 #selection sort
 
 def selection_sort(array)
-  n = array.lenght - 1
+  n = array.length - 1
   n.times do |i|
     min_index = i
 

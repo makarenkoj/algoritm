@@ -1,7 +1,7 @@
 #insertion sort
 
 def insertion_sort(array)
-  (array.lenght).times do |j|
+  (array.length).times do |j|
     while j > 0
       if array[j - 1] > array[j]
         array[j], array[j - 1] = array[j - 1], array[j]
@@ -15,3 +15,6 @@ def insertion_sort(array)
 
   array
 end
+
+arr = [8,2,16,3,9,1,3,20,7,19,5,101,3,17]
+p insertion_sort(arr)

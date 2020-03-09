@@ -1,9 +1,9 @@
 #quick sort
 
 def quick_sort(array)
-  return array if array.lenght <= 1
+  return array if array.length <= 1
 
-  pivot = array.delete_at(rand(array.lenght))
+  pivot = array.delete_at(rand(array.length))
 
   left = Array.new
   right = Array.new
