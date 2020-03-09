@@ -1,0 +1,20 @@
+#quick sort
+
+def quick_sort(array)
+  return array if array.lenght <= 1
+
+  pivot = array.delete_at(rand(array.lenght))
+
+  left = Array.new
+  right = Array.new
+
+  array.each do |x|
+    if x <= pivot
+      left << x
+    else
+      right << x
+    end
+  end
+
+  return *quick_sort(left), pivot, *quick_sort(right)
+end
